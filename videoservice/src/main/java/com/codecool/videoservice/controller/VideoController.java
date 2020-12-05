@@ -16,7 +16,7 @@ public class VideoController {
     @Autowired
     VideoService service = new VideoService();
 
-    @CrossOrigin
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/videos")
     public List<Video> listAllVideo(){
         return service.getAllVideo();
