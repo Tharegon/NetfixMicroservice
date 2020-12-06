@@ -14,7 +14,7 @@ import java.util.List;
 @Slf4j
 public class VideoController {
     @Autowired
-    VideoService service = new VideoService();
+    VideoService service;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/videos")

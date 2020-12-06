@@ -72,15 +72,30 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>LATEST</version>
+			<version>2.9.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>LATEST</version>
+			<version>2.9.2</version>
+		</dependency>
+
+		<!--EUREKA-CLIENT-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
